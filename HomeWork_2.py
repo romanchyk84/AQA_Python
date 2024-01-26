@@ -6,8 +6,8 @@ celsius = float(input('Enter temperature in Celsius: '))
 temp_fahr = celsius * 9 / 5 + 32
 temp_kelv = celsius + 273.15
 
-print('Temperature in Fahrenheit = ', temp_fahr)
-print('Temperature in Kelvin = ', temp_kelv)
+print('Temperature in Fahrenheit = ', temp_fahr,'F')
+print('Temperature in Kelvin = ', temp_kelv,'K')
 
 
 # Task 2
