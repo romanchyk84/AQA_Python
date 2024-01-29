@@ -1,4 +1,5 @@
-# HomeWork_3
+# HomeWork_3 on Gitgub https://github.com/romanchyk84/AQA_Python.git
+
 # 1) Запропонувати юзеру створити список(введіть продукти через пробіл)
 purchase = input("\tВведите список продуктов через пробел: ")
 
