@@ -8,3 +8,7 @@ alcohol_blacklist = {'Steven', 'Helen', 'Mary', 'Nick', 'Jack', 'Jason', 'Maryna
 
 names = australia_blacklist.intersection(poker_blacklist).intersection(alcohol_blacklist)
 print(f'Джекпот виграли {len(names)} учасники: {", ".join(names)}!')
+
+
+"""2 - Словник має наступні дані: {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
+Використвоючі f-string вивести: "User_name is living in place_name" для кожного юзера. Використовувати цикл"""
