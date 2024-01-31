@@ -15,5 +15,28 @@ print('\n---Наступна задача---')
 """2 - Словник має наступні дані: {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
 Використвоючі f-string вивести: "User_name is living in place_name" для кожного юзера. Використовувати цикл"""
 
-slovnyk = {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
-print(slovnyk)
+# pers_data = {
+#     'Alex': 'house',
+#     'Max': 'Flat', 'Olha': 'Appartments',
+#     'Oleh': 'Trench'
+# }
+# y = pers_data['Alex']
+# x = pers_data.get('Olha')
+# print(pers_data)
+#
+# for el in pers_data:
+#     print(el)
+# else:
+#     print('done')
+
+
+# matrix = [
+#     australia_blacklist,
+#     poker_blacklist,
+#     alcohol_blacklist
+# ]
+#
+# for row in matrix:
+#     print(row)
+#     for name in row:
+#         print(name)
