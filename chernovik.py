@@ -45,3 +45,23 @@
 # print('\n',third_list)
 # print(first_list)
 # print(second_list)
+
+# smtn = [1,  2, True, 'a', 'none', None, 'b', 123]
+# print(smtn)
+#
+# for el in smtn:
+#     if el is None:
+#         print('None is here')
+#         break
+#
+# else:
+#     print('There is no None')
+
+text = input("Vvedite vash text: ").lower()
+
+print("\n".join(f'Літера: {word} зустрічаєтсья: {text.count(word)}' for word in set(text) if word.isalpha()))
+
+# for word in set(text):
+#     if word.isalpha():
+#         print(word, text.count(word) )
+
