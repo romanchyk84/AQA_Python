@@ -66,6 +66,32 @@ for word in tekst:
     if word.isalpha():
         word = word.upper()
         letters[word] = letters.get(word, 0) +1
+    elif word.isdigit():
+        letters[word] = letters.get(word, 0) + 1
 
 for key in letters:
     print(f'Літера "{key}" використовується - {letters[key]} раз(-а, -ів)')
+# End
+
+
+print('\n---Задача без оцінювання---')
+# Ви створюєте список в якому може бути None(а може і не бути)
+# Мета: надрукувати "There is no None" у випадку якщо None не зустрічаеться у списку
+# Умови:
+# По списку ми йдемо циклом
+# Не створювати змінні(крім списку про який сказано вище)
+# використати if 1 раз
+# # Не використовувати методи/функції/класи
+
+smtn = [1,  2, True, 'a', 'none', None, 'b', 123]
+print(smtn)
+
+for el in smtn:
+    if el is None:
+        print('NONE is here')
+        break
+
+else:
+    print('There is no NONE')
+# End
+
