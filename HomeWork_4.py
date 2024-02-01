@@ -13,7 +13,7 @@ print(f'Джекпот виграли {len(names)} учасники: {", ".join(
 print(f'Усім іншим {len(dif_names)} учасникам цього разу не пощастило. Бажаємо: {", ".join(dif_names)} успіхів наступного разу.')
 # End
 
-print('\n---Наступна задача---')
+print('\n---Друга задача---')
 # 2 - Словник має наступні дані: {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
 # Використвоючі f-string вивести: "User_name is living in place_name" для кожного юзера. Використовувати цикл
 
@@ -28,7 +28,7 @@ for key in pers_data:
     print(f'"{key} is living in {pers_data[key]}"')
 # End
 
-print('\n---Наступна задача---')
+print('\n---Третя задача---')
 # 3 - Є список ['Jack', 'Leon', 'Alice', None, 32, 'Bob']
 # Вивести ТІЛЬКИ коректні імена(тобто стрінги). Використовувати Continue.
 
@@ -41,45 +41,31 @@ for name in names_list:
         continue
     # else:
     #     b.append(name)
-print(f'Такі імена як {", ".join(a)} є коректними.')
+print(f'Такі імена як {", ".join(a)} є коректними, тобто є стрінгою.')
 # print(f'-------- не є стрінгою {b} --------')
 # End
 
 
-print('\n---Наступна задача---')
-# else:
-#     print('done')
+print('\n---Четверта задача---')
+# 4 - Порахувати та вивести(print) кількість букв в строці.
+# Юзер щось вводить(input)
+# Ваша задача надрукувати кількість кожного символу того що він ввів.
+# Прикдад:
+# Юзер вводить:
+# My name is Emmy Santiago.
+# ВИ прінтаете щось накшталт:
+# M = 1, y = 2, n = 2, ...(або в іншому форматі, це не принциповоб головне, що б чітко було зрозуміло скільки разів зустрічаеться кожна буква)
+# Тобто кожну букву та скільки разів вона зустрічаеться
+# Підказка: це про словники, get можна використати для тотго щоб витягнути чи є ключ без помилки та надати дефолтне значення
 
+tekst = input('Введіть ваш текст: ')
 
-# for el in pers_data:
-#     print(el)
-# else:
-#     print('done')
+letters = {}
 
+for word in tekst:
+    if word.isalpha():
+        word = word.upper()
+        letters[word] = letters.get(word, 0) +1
 
-# matrix = [
-#     australia_blacklist,
-#     poker_blacklist,
-#     alcohol_blacklist
-# ]
-#
-# for row in matrix:
-#     print(row)
-#     for name in row:
-#         print(name)
-
-# matrix = [
-#     [1, 2, 3],
-#     [4, 5, 6],
-#     [7, 8, 9],
-# ]
-#
-# for row in matrix:
-#     print(row)
-#     if 3 in row:
-#         continue
-#
-#     for number in row:
-#         print(number)
-#         if number in (2, 5, 8):
-#             break
+for key in letters:
+    print(f'Літера "{key}" використовується - {letters[key]} раз(-а, -ів)')
