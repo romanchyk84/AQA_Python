@@ -95,3 +95,9 @@ else:
     print('There is no NONE')
 # End
 
+print('\n---Підрахунок літер в 2 строки без dict з виводом за домогою унікальних значень із set---')
+# 4 задачу зробити в 2 строки
+text = input("Vvedite vash text: ").lower()
+
+print("\n".join(f'Літера: {word} зустрічаєтсья: {text.count(word)}' for word in set(text) if word.isalpha()))
+# End
