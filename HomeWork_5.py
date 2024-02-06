@@ -38,33 +38,36 @@ try:
     lst = form.split()
     print(type(lst), lst)
 
+# FormulaError check here
     try:
         if len(lst) != 3:
             raise FormulaError
     except FormulaError:
-        print("Nedostatochno elementov")
+        print(f"Nedostatochno elementov. Dolzhno byt 3 elementa, vy vveli {len(lst)}. Vvedite elementy cherez probel (naprimer X + Y)")
 
     x = float(lst[0])
     y = float(lst[2])
     op = lst[1]
     print(x, y, op)
 
+# WrongOperatorError check in this block
     try:
         if op not in ['*','/']:
             raise WrongOperatorError
     except WrongOperatorError:
-        print("Neverniy operator. Vvedite (*) ili (/)")
+        print("Neverniy operator. Vvedite '*' ili '/' (naprimer X * Y)")
 
-        if op == '*':
-            res = x * y
-            print(res)
+    if op == '*':
+        res = x * y
+        print(res)
 
+# Division block and ZeroDivisionError check here
     if op == '/':
         try:
             res = x / y
             print(res)
         except ZeroDivisionError as zd:
-            print(f'Na NOL Delit nelzya, {zd}')
+            print(f'Nevernaya operatsiya, na NOL delit nelzya, {zd}')
 
 except:
     pass
